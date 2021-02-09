@@ -1,0 +1,131 @@
+* {
+    outline: none;
+}
+a {
+    text-decoration: none!important;
+    cursor: pointer!important;
+    transition: .6s;
+}
+p {
+    line-height: 1.5;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    max-width: 1124px!important;
+    width: 100%;
+}
+
+.topo {
+    background: #959595;
+    height: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.navbar-default {
+    background: transparent;
+    border-color: transparent;
+    height: 110px;
+    border-radius: 0;
+    margin-bottom: 0px;
+    border: none;
+}
+.navbar-header .navbar-brand {
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+.logo-branca {
+    display: none!important;
+}
+#bs-example-navbar-collapse-1 {
+    float: right;
+    height: 110px;
+    padding: 0;
+}
+.navbar-header img {
+    margin-left: 15px;
+}
+ul.nav {
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+ul.nav>li>a {
+    font-size: 14px;
+    color: #631528!important;
+    text-transform: uppercase;
+    padding: 10px 5px;
+}
+ul.nav>li>a:hover {
+    font-weight: 700;
+}
+
+#canvas_container {
+  width: 289.61084px;
+  border: 1px solid #aaa;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 767px) {
+    #bs-example-navbar-collapse-1 {
+        float: none;
+        background: transparent;
+        background-size: cover;
+        z-index: 300;
+        position: relative;
+        min-height: 300px;
+        height: 100%;
+        padding: 10px 30px;
+        width: 100%;
+        margin: 0 auto;
+        top: -30px;
+    }
+    .navbar-toggle {
+        padding: 15px 15px;
+        margin-top: 20px;
+    }
+    .navbar-toggle {
+        margin-top: 75px;
+    }
+    .navbar-header {
+        height: 90px;
+    }
+    #menu ul.nav.navbar-nav {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    #menu ul.nav.navbar-nav>li {
+        margin-bottom: 20px;
+    }
+    .navbar-nav {
+        width: 100%;
+        height: auto!important;
+        float: none;
+        text-align: center;
+        display: block!important;
+        margin: 10px 0 0 0;
+    }
+    .navbar-nav>li>a {
+        padding: 15px 10px!important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (min-width: 992px) and (max-width: 1100px) {
+
+}

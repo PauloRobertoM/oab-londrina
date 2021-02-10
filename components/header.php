@@ -74,17 +74,20 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.php"><img class="logo" src="assets/images/logo.png" alt="Logo" /></a>
+                        <a class="navbar-brand" href="index.php"><img class="logo" src="assets/images/logo-oab-londrina.png" alt="Logo OAB Londrina" /></a>
                     </div><!-- .navbar-header -->
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="">Inicio</a></li>
-                            <li><a href="">Ofertas</a></li>
-                            <li><a href="">Produtos</a></li>
-                            <li><a href="">novidades</a></li>
-                            <li><a href="">Nossas Lojas</a></li>
-                            <li><a href="">Sobre a Rede</a></li>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">INSTITUCIONAL</a></li>
+                            <li><a href="">SERVIÇOS</a></li>
+                            <li><a href="">EVENTOS</a></li>
+                            <li><a href="">JORNAL</a></li>
+                            <li><a href="">NOTÍCIAS</a></li>
+                            <li><a href="">CADASTRO</a></li>
+                            <li><a href="">ARTIGOS</a></li>
+                            <li><a href="">CONTATO</a></li>
                         </ul><!-- .nav -->
                     </div><!-- .navbar-collapse -->
                 </div><!-- container -->

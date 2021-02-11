@@ -1,10 +1,11 @@
 * {
     outline: none;
 }
-a {
+a,
+button {
     text-decoration: none!important;
     cursor: pointer!important;
-    transition: .6s;
+    transition: .5s;
 }
 p {
     line-height: 1.5;
@@ -28,61 +29,373 @@ body {
     background: #959595;
     height: 10px;
     border-bottom: 1px solid #fff;
+    position: relative;
+    z-index: 9;
+}
+.topo .container {
+    display: flex;
+    justify-content: flex-end;
+}
+.topo a {
+    font-size: 15px;
+    color: #fff;
+    background: #003552;
+    padding: 7px 20px;
+}
+.topo a:hover {
+    background: #c8161d;
+}
+.topo .fa {
+    margin-right: 5px;
 }
 
+.nav.menu {
+    border-bottom: 5px solid #00429b;
+}
 .navbar-default {
-    background: transparent;
-    border-color: transparent;
-    height: 110px;
+    background: #e8e8e8;
+    border: none;
+    height: 140px;
     border-radius: 0;
     margin-bottom: 0px;
-    border: none;
 }
 .navbar-header .navbar-brand {
-    height: 110px;
+    height: 140px;
     display: flex;
     align-items: center;
-}
-.navbar-brand {
     margin: 0;
     padding: 0;
 }
-.logo-branca {
-    display: none!important;
-}
-#bs-example-navbar-collapse-1 {
-    float: right;
-    height: 110px;
-    padding: 0;
-}
 .navbar-header img {
+    transform: scale(1);
+    transition: .5s;
     margin-left: 15px;
 }
-ul.nav {
-    height: 110px;
+.navbar-header .navbar-brand:hover img {
+    transform: scale(1.03);
+}
+
+.navbar-default .container:after,
+.navbar-default .container:before {
+    display: none;
+}
+.navbar-default .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.redes-sociais {
+    display: flex;
+}
+.redes-sociais a {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: #c8161d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+.redes-sociais a:last-child {
+    margin-right: 0;
+}
+.redes-sociais a:hover {
+    background: #00429b;
+}
+.redes-sociais a i {
+    font-size: 16px;
+    color: #e8e8e8;
+}
+
+.navbar-default form {
+    display: flex;
+}
+.navbar-default form input {
+    font-size: 14px;
+    color: #959595;
+    width: 100%;
+    max-width: 350px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #959595;
+    border-radius: 4px;
+    padding-left: 10px;
+    margin: 0 5px 0 0;
+}
+.navbar-default form button {
+    font-size: 16px;
+    color: #e8e8e8;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background: #00429b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.navbar-default form button:hover {
+    background: #c8161d;
+}
+
+#bs-example-navbar-collapse-1 {
+    width: 100%;
+    float: none;
+    padding: 0;
+    background: #c8161d;
+    padding: 20px;
+}
+#bs-example-navbar-collapse-1 ul.nav {
+    width: 100%;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#bs-example-navbar-collapse-1 ul.nav:after,
+#bs-example-navbar-collapse-1 ul.nav:before {
+    display: none;
+}
+#bs-example-navbar-collapse-1 ul.nav>li>a {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0;
+}
+#bs-example-navbar-collapse-1 ul.nav>li>a:hover {
+    font-weight: 700;
+    background: transparent;
+}
+
+span.barra {
+    width: 2px;
+    height: 16px;
+    background: #ff4a51;
+}
+
+.destaque {
+    padding: 50px 0;
+}
+#owl-vitrine img {
+    height: 500px;
+    object-fit: cover;
+    transform: scale(1);
+    transition: .5s;
+}
+.destaque .conteudo {
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+    padding: 30px;
+}
+.destaque .conteudo h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+}
+#owl-vitrine a:hover img {
+    transform: scale(1.05);
+}
+.owl-dots {
+    text-align: center;
+    padding-top: 15px;
+}
+.owl-dots .owl-dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #c5c5c5;
+    transition: .5s;
+    margin: 0 5px;
+}
+.owl-dots .owl-dot.active,
+.owl-dots .owl-dot:hover {
+    background-color: #c8161d;
+}
+.owl-dots .owl-dot:focus {
+    outline: none;
+}
+
+.banner>a {
+    display: table;
+    margin-bottom: 10px;
+}
+.banner>a:last-child {
+    margin-bottom: 0;
+}
+.banner img {
+    height: 117px;
+    object-fit: cover;
+}
+
+.noticias {
+    padding-bottom: 50px;
+}
+.noticias h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #003552;
+    text-transform: uppercase;
+    display: table;
+    border-bottom: 4px solid #a1a1a1;
+    padding: 0 30px 5px 0;
+    margin: 0 0 40px;
+}
+.noticias h1>a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #c8161d;
+    text-transform: uppercase;
+    margin: 0 0 0 20px;
+}
+.noticias h1>a:hover {
+    color: #003552;
+}
+.noticias span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #a1a1a1;
+    text-transform: uppercase;
+    display: table;
+    border-bottom: 2px solid #a1a1a1;
+    padding-bottom: 5px;
+    transition: .5s;
+}
+.noticias h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #003552;
+    text-transform: uppercase;
+    transition: .5s;
+    margin: 5px 0 40px;
+}
+.noticias a:hover h2,
+.noticias a:hover span {
+    color: #c8161d;
+}
+
+.banner2 {
+    padding-bottom: 60px;
+}
+.wp_bannerize.corpo {
+    display: flex;
+    justify-content: space-between;
+}
+.wp_bannerize.corpo>div {
+    width: 49%;
+}
+.wp_bannerize.corpo img {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.na-midia {
+    background: #ececec;
+    padding: 50px 0;
+}
+.na-midia h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #c8161d;
+    text-transform: uppercase;
+    display: table;
+    border-bottom: 4px solid #a1a1a1;
+    padding: 0 30px 5px 0;
+    margin: 0 0 40px;
+}
+
+.eventos {
+    padding-top: 50px;
+}
+
+.endereco {
+    background: #00429b;
+    padding: 40px 0;
+}
+.endereco h4,
+.endereco a {
+    color: #fff;
+    margin: 0;
+}
+.endereco h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.endereco h4 span {
+    font-weight: 700;
+}
+.endereco a {
+    font-size: 12px;
+    color: #fff;
     display: flex;
     align-items: center;
 }
-ul.nav>li>a {
-    font-size: 14px;
-    color: #631528!important;
-    text-transform: uppercase;
-    padding: 10px 5px;
+.endereco a:hover {
+    font-weight: 700;
 }
-ul.nav>li>a:hover {
+.endereco i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.mapa-site {
+    background: #003552;
+    padding: 60px 0;
+}
+.mapa-site li {
+    margin-bottom: 10px;
+}
+.mapa-site a {
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.mapa-site a:hover {
     font-weight: 700;
 }
 
-#canvas_container {
-  width: 289.61084px;
-  border: 1px solid #aaa;
+.rodape {
+    background: #c8161d;
+    padding: 20px 0;
+}
+.rodape .container:after,
+.rodape .container:before {
+    display: none;
+}
+.rodape .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rodape a,
+.rodape p {
+    font-size: 11px;
+    color: #fff;
+    margin: 0;
+}
+.rodape span {
+    font-weight: 700;
 }
 
 /* --- MOBILE --- */
 @media (max-width: 767px) {
+    .navbar-default .container {
+        display: block;
+        padding: 20px 15px;
+    }
+    .navbar-default {
+        height: auto;
+    }
     #bs-example-navbar-collapse-1 {
         float: none;
-        background: transparent;
+        background: #c8161d;
         background-size: cover;
         z-index: 300;
         position: relative;
@@ -91,17 +404,26 @@ ul.nav>li>a:hover {
         padding: 10px 30px;
         width: 100%;
         margin: 0 auto;
-        top: -30px;
+        top: -202px;
     }
-    .navbar-toggle {
+    .navbar-default .navbar-toggle,
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
         padding: 15px 15px;
-        margin-top: 20px;
+        margin-top: 35px;
+        border-color: #00429b;
+        background: #00429b;
     }
-    .navbar-toggle {
-        margin-top: 75px;
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+    .redes-sociais {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
     }
     .navbar-header {
-        height: 90px;
+        height: auto;
     }
     #menu ul.nav.navbar-nav {
         float: none;
@@ -122,9 +444,93 @@ ul.nav>li>a:hover {
     .navbar-nav>li>a {
         padding: 15px 10px!important;
     }
+    #owl-vitrine img {
+        height: 220px;
+    }
+    .destaque {
+        padding: 30px 0;
+    }
+    .destaque .conteudo {
+        padding: 5px 15px;
+    }
+    .destaque .conteudo h2 {
+        font-size: 18px;
+    }
+    .banner {
+        margin-top: 30px;
+    }
+    .banner>a {
+        margin: 0 auto 5px;
+    }
+    .noticias {
+        padding-bottom: 0px;
+    }
+    .noticias h2 {
+        font-size: 16px;
+    }
+    .banner2 {
+        padding-bottom: 20px;
+    }
+    .banner2 img {
+        margin-bottom: 10px;
+    }
+    .wp_bannerize.corpo {
+        display: block;
+    }
+    .wp_bannerize.corpo>div {
+        width: 100%;
+    }
+    .wp_bannerize.corpo img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .na-midia {
+        padding: 30px 0;
+    }
+    .eventos {
+        padding-top: 30px;
+    }
+    .endereco h4 {
+        font-size: 14px;
+        margin: 0 0 30px;
+    }
+    .endereco a {
+        margin-bottom: 30px;
+    }
+    .endereco {
+        padding: 30px 0 0;
+    }
+    .mapa-site {
+        padding: 30px 0;
+    }
+    .rodape .container {
+        display: block;
+    }
+    .rodape p {
+        margin: 0 0 20px;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-
+    #bs-example-navbar-collapse-1 ul.nav>li>a {
+        font-size: 12px;
+    }
+    .destaque .conteudo h2 {
+        font-size: 30px;
+    }
+    #owl-vitrine img {
+        height: 350px;
+    }
+    .banner img {
+        height: 80px;
+    }
+    .noticias h2 {
+        font-size: 16px;
+    }
+    .endereco h4,
+    .endereco a,
+    .mapa-site a {
+        font-size: 11px;
+    }
 }
 @media (min-width: 992px) and (max-width: 1100px) {
 

@@ -5,12 +5,20 @@ require TEMPLATEPATH . DIRECTORY_SEPARATOR . 'Functions' . DIRECTORY_SEPARATOR .
 require TEMPLATEPATH . DIRECTORY_SEPARATOR . 'Functions' . DIRECTORY_SEPARATOR . 'Diretorias.php';
 require TEMPLATEPATH . DIRECTORY_SEPARATOR . 'Functions' . DIRECTORY_SEPARATOR . 'Subsecaos.php';
 require TEMPLATEPATH . DIRECTORY_SEPARATOR . 'Functions' . DIRECTORY_SEPARATOR . 'Estaduals.php';
+require TEMPLATEPATH . DIRECTORY_SEPARATOR . 'Functions' . DIRECTORY_SEPARATOR . 'Comissoes.php';
+require TEMPLATEPATH . DIRECTORY_SEPARATOR . 'Functions' . DIRECTORY_SEPARATOR . 'Convenios.php';
+require TEMPLATEPATH . DIRECTORY_SEPARATOR . 'Functions' . DIRECTORY_SEPARATOR . 'Dativos.php';
+require TEMPLATEPATH . DIRECTORY_SEPARATOR . 'Functions' . DIRECTORY_SEPARATOR . 'Jornals.php';
 
 $Bootstrap = new Bootstrap;
 $Contato = new Contato;
 $Diretorias = new Diretorias;
 $Subsecaos = new Subsecaos;
 $Estaduals = new Estaduals;
+$Comissoes = new Comissoes;
+$Convenios = new Convenios;
+$Dativos = new Dativos;
+$Jornals = new Jornals;
 
 function new_excerpt_length($length) {
    return 999999999;
